@@ -1,0 +1,387 @@
+{
+	"info": {
+		"_postman_id": "1759af3b-91cf-42e2-8b56-e677ef70ff20",
+		"name": "healthcare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create enrollees",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"25135127\",\n    \"mobileNumber\": \"9740501942\",\n    \"birthDate\": \"2021-01-28\",\n    \"activationStatus\": true,\n    \"emailID\": \"test@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update enrollees",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"kirankotla\",\n    \"userId\": \"25135127\",\n    \"mobileNumber\": \"9740501902\",\n    \"birthDate\": \"2021-01-28\",\n    \"activationStatus\": true,\n    \"emailID\": \"test1@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createDependant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"25135242342\",\n    \"mobileNumber\": \"9740501942\",\n    \"birthDate\": \"2021-01-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/25135127/createDependant",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"25135127",
+						"createDependant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createDependant 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"34234234234\",\n    \"mobileNumber\": \"9740501942\",\n    \"birthDate\": \"2021-01-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/25135127/createDependant",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"25135127",
+						"createDependant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createDependant 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"3423423434234\",\n    \"mobileNumber\": \"9740501942\",\n    \"birthDate\": \"2021-01-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/25135127/createDependant",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"25135127",
+						"createDependant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Dependant",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"25135242342\",\n    \"mobileNumber\": \"9740501902\",\n    \"birthDate\": \"2021-01-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/25135242342/updateDependant",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"25135242342",
+						"updateDependant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Dependant",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"25135242342\",\n    \"mobileNumber\": \"9740501902\",\n    \"birthDate\": \"2021-01-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/25135242342/deleteDependant",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"25135242342",
+						"deleteDependant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get enrollees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"25135242342\",\n    \"mobileNumber\": \"9740501902\",\n    \"birthDate\": \"2021-01-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/25135127",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"25135127"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"kirankotla\",\n    \"userId\": \"25135242342\",\n    \"mobileNumber\": \"9740501902\",\n    \"birthDate\": \"2021-01-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/enrollees/25135127",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"enrollees",
+						"25135127"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
