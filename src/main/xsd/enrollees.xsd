@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://schema.healthcare.com/enrollees/pojo" elementFormDefault="qualified" targetNamespace="http://schema.healthcare.com/enrollees/pojo">
+   <xs:element name="usersResponce">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element maxOccurs="1" minOccurs="1" name="userName" type="xs:string" />
+                     <xs:element maxOccurs="1" minOccurs="1" name="userId" type="xs:string" />
+                     <xs:element maxOccurs="1" minOccurs="0" name="mobileNumber" type="xs:string" />
+                     <xs:element maxOccurs="1" minOccurs="1" name="birthDate" type="xs:date" />
+                     <xs:element maxOccurs="1" minOccurs="1" name="activationStatus" type="xs:string" />
+                     <xs:element maxOccurs="1" minOccurs="0" name="emailID" type="xs:string" />
+                     <xs:element minOccurs="0" maxOccurs="unbounded" name="dependents" type="dependentsRequestResponce" />
+                  </xs:sequence>
+               </xs:complexType>
+   </xs:element>
+   <xs:complexType name="dependentsRequestResponce">
+      <xs:sequence>
+         <xs:element maxOccurs="1" minOccurs="1" name="userName" type="xs:string" />
+         <xs:element maxOccurs="1" minOccurs="1" name="userId" type="xs:string" />
+         <xs:element maxOccurs="1" minOccurs="0" name="mobileNumber" type="xs:string" />
+         <xs:element maxOccurs="1" minOccurs="1" name="birthDate" type="xs:date" />
+      </xs:sequence>
+   </xs:complexType>
+
+   <xs:complexType name="userRequest">
+      <xs:sequence>
+         <xs:element maxOccurs="1" minOccurs="1" name="userName" type="xs:string" />
+         <xs:element maxOccurs="1" minOccurs="1" name="userId" type="xs:string" />
+         <xs:element maxOccurs="1" minOccurs="0" name="mobileNumber" type="xs:string" />
+         <xs:element maxOccurs="1" minOccurs="1" name="birthDate" type="xs:date" />
+         <xs:element maxOccurs="1" minOccurs="1" name="activationStatus" type="xs:string" />
+         <xs:element maxOccurs="1" minOccurs="0" name="emailID" type="xs:string" />
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>
